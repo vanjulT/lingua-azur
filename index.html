@@ -7,10 +7,105 @@
   <link rel="stylesheet" href="css/output.css">
 </head>
 <body class="bg-sky-50">
-  <main class="min-h-screen flex flex-col items-center justify-center text-center">
-    <h1 class="text-4xl text-sky-700">Lingua Azur</h1>
-    <p class="text-lg text-slate-600">The place where the languages meet</p>
+  <header>
+    <nav class="flex items-center justify-between p-4 bg-white">
+      <a class="hover:text-sky-700" href="index.html">Lingua Azur</a>
+      <div class="flex gap-6">
+      <a class="hover:text-sky-700" href="index.html">Home</a>
+      <a class="hover:text-sky-700" href="courses.html">Courses</a>
+      <a class="hover:text-sky-700" href="gallery.html">Gallery</a>
+      <a class="hover:text-sky-700" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="relative bg-[url('../images/hero-terrace.jpg')] bg-cover bg-center py-24 px-6 md:px-16 text-left">
+      <div class="w-fit max-w-xl rounded-xl backdrop-blur-sm p-8">
+    <h1 class="text-4xl md:text-6xl font-bold text-sky-900">Lingua Azur</h1>
+    <p class="mt-4 text-lg text-slate-900 font-medium">The place where the languages meet</p>
+    <div class="mt-8 flex flex-col sm:flex-row justify-start gap-4">
+      <a href="courses.html" class="rounded-lg bg-sky-700 px-6 py-3 text-white hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-400">See our courses</a>
+      <a href="contact.html" class="rounded-lg px-6 py-3 hover:bg-sky-100 border border-sky-700 text-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400">Contact us</a>
+    </div>
+    </div>
+    </section>
+    <section class="py-16 px-6 bg-white">
+      <h2 class="text-3xl font-bold text-center text-slate-800">Why choose Lingua Azur</h2>
+      <div class="mt-10 flex flex-col md:flex-row gap-6 max-w-5xl mx-auto">
+      <article class="flex-1 rounded-xl border border-sky-100 bg-sky-50 p-6 text-center">
+  <h3 class="text-xl font-semibold text-sky-700">Native teachers</h3>
+  <p class="mt-2 text-slate-600">Your teacher grew up speaking the language, so you learn how people really talk in the street, at the market and at work. They also know where learners usually get stuck, and they help you through it.</p>
+</article>
+
+<article class="flex-1 rounded-xl border border-sky-100 bg-sky-50 p-6 text-center">
+  <h3 class="text-xl font-semibold text-sky-700">Small groups</h3>
+  <p class="mt-2 text-slate-600">We keep classes to 8 people at most, so everyone gets time to speak in every lesson. You are never just a face at the back of the room, and your teacher knows your name and your progress.</p>
+</article>
+
+<article class="flex-1 rounded-xl border border-sky-100 bg-sky-50 p-6 text-center">
+  <h3 class="text-xl font-semibold text-sky-700">Flexible schedule</h3>
+  <p class="mt-2 text-slate-600">Choose mornings, evenings or Saturdays, whatever fits your week. If work or family gets in the way, you can move a class to another day without losing it.</p>
+</article>
+      </div>
+    </section>
+    <section class="py-16 px-6">
+      <h2 class="text-3xl font-bold text-center text-slate-800">What our students say</h2>
+      <div class="mt-10 grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+        <figure class="rounded-xl bg-white p-6 shadow">
+  <blockquote class="text-slate-700">
+    "I came with almost no French. After four months I can order at the market and chat with my neighbours. The teacher never made me feel silly for making mistakes."
+  </blockquote>
+  <figcaption class="mt-4 font-semibold text-sky-700">
+    Marta, French student
+  </figcaption>
+</figure>
+
+<figure class="rounded-xl bg-white p-6 shadow">
+  <blockquote class="text-slate-700">
+    "The small class makes all the difference. I speak in every lesson, and the Saturday time suits my work perfectly."
+  </blockquote>
+  <figcaption class="mt-4 font-semibold text-sky-700">
+    Daniel, Italian student
+  </figcaption>
+</figure>
+<figure class="rounded-xl bg-white p-6 shadow">
+  <blockquote class="text-slate-700">
+    "I needed English for my job interviews. My teacher practised real questions with me every week, and last month I got the job. I still can't believe it."
+  </blockquote>
+  <figcaption class="mt-4 font-semibold text-sky-700">
+    Karim, English student
+  </figcaption>
+</figure>
+
+<figure class="rounded-xl bg-white p-6 shadow">
+  <blockquote class="text-slate-700">
+    "We moved to Nice last year and I felt lost at the town hall and the doctor. Now I can explain things myself. The other students became real friends."
+  </blockquote>
+  <figcaption class="mt-4 font-semibold text-sky-700">
+    Sofia, French student
+  </figcaption>
+</figure>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 bg-white">
+      <h2 class="text-3xl font-bold text-center text-slate-800">Opening hours</h2>
+      <ul class="mt-6 text-center space-y-2 text-slate-700">
+        <li>Monday to Friday: 9:00 - 20:00</li>
+        <li>Saturday: 9:00 - 13:00</li>
+        <li>Sunday: closed</li>
+
+
+      </ul>
+
+    </section>
+
   </main>
+  <footer class="bg-slate-800 py-8 px-6 text-center text-slate-200">
+    <p>Lingua Azur · 12 Rue de la République, 06000 Nice · +33 4 93 00 00 00</p>
+    <p class="mt-2 text-sm text-slate-400">© 2026 Lingua Azur. All rights reserved.</p>
+  </footer>
+  
   
 </body>
 </html>
