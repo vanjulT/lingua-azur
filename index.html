@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lingua Azur</title>
+  <title>Lingua Azur · Language school in Nice</title>
   <link rel="stylesheet" href="css/output.css">
   <script src="js/theme.js"></script>
 </head>
 <body class="bg-sky-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sky-800 focus:ring-2 focus:ring-sky-400">Skip to main content</a>
   <header>
     <nav class="flex flex-wrap items-center justify-between gap-3 p-4 bg-white dark:bg-slate-800">
       <a class="whitespace-nowrap font-semibold hover:text-sky-700 dark:hover:text-sky-300" href="index.html">Lingua Azur</a>
       <div class="flex flex-wrap items-center gap-x-4 gap-y-2 md:gap-6">
-      <a class="hover:text-sky-700 dark:hover:text-sky-300" href="index.html">Home</a>
+      <a aria-current="page" class="font-semibold text-sky-700 underline underline-offset-4 hover:text-sky-800 dark:text-sky-300" href="index.html">Home</a>
       <a class="hover:text-sky-700 dark:hover:text-sky-300" href="courses.html">Courses</a>
       <a class="hover:text-sky-700 dark:hover:text-sky-300" href="gallery.html">Gallery</a>
       <a class="hover:text-sky-700 dark:hover:text-sky-300" href="contact.html">Contact</a>
@@ -25,17 +26,27 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <section class="relative bg-[url('../images/hero-terrace.jpg')] bg-cover bg-center py-24 px-6 md:px-16 text-left">
       <div class="w-fit max-w-xl rounded-xl backdrop-blur-sm p-8 dark:bg-slate-900/60">
     <h1 class="text-4xl md:text-6xl font-bold text-sky-900 dark:text-white">Lingua Azur</h1>
-    <p class="mt-4 text-lg text-slate-900 font-medium dark:text-slate-100">The place where the languages meet</p>
+    <p class="mt-4 text-lg text-slate-900 font-medium dark:text-slate-100">The place where the languages meet. French, English, Spanish and Italian in small groups, in the heart of Nice.</p>
     <div class="mt-8 flex flex-col sm:flex-row justify-start gap-4">
       <a href="courses.html" class="rounded-lg bg-sky-700 px-6 py-3 text-white hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-400">See our courses</a>
-      <a href="contact.html" class="rounded-lg px-6 py-3 hover:bg-sky-100 border border-sky-700 text-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400 dark:border-sky-300 dark:text-sky-300 dark:hover:bg-slate-800">Contact us</a>
+      <a href="contact.html" class="rounded-lg px-6 py-3 hover:bg-sky-100 border border-sky-700 text-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-400 dark:border-sky-300 dark:text-sky-300 dark:hover:bg-slate-800">Book a free trial</a>
     </div>
     </div>
     </section>
+
+    <section aria-label="Lingua Azur in numbers" class="bg-sky-800 px-6 py-8 text-white dark:bg-sky-950">
+      <ul class="mx-auto flex max-w-5xl flex-wrap justify-center gap-x-12 gap-y-6 text-center">
+        <li><p class="text-3xl font-bold">4</p><p class="text-sm text-sky-100">languages taught</p></li>
+        <li><p class="text-3xl font-bold">8</p><p class="text-sm text-sky-100">students max per class</p></li>
+        <li><p class="text-3xl font-bold">1,200+</p><p class="text-sm text-sky-100">students since 2014</p></li>
+        <li><p class="text-3xl font-bold">4.9 / 5</p><p class="text-sm text-sky-100">average student rating</p></li>
+      </ul>
+    </section>
+
     <section class="py-16 px-6 bg-white dark:bg-slate-800">
       <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-white">Why choose Lingua Azur</h2>
       <div class="mt-10 flex flex-col md:flex-row gap-6 max-w-5xl mx-auto">
@@ -55,6 +66,85 @@
 </article>
       </div>
     </section>
+
+    <section class="py-16 px-6">
+      <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-white">Our courses</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-300">Four languages, every level, mornings to evenings.</p>
+      <div class="mt-10 grid max-w-6xl gap-6 mx-auto sm:grid-cols-2 lg:grid-cols-4">
+        <article class="overflow-hidden rounded-xl bg-white shadow transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800">
+          <img src="images/conversation.jpg" width="1376" height="768" loading="lazy" alt="Two students practising French conversation at a café table" class="aspect-video w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-sky-700 dark:text-sky-300">French</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Everyday French for life in Nice.</p>
+            <p class="mt-3 text-sm font-semibold">From €18 per lesson</p>
+            <a href="courses.html#french" class="mt-3 inline-block text-sm font-semibold text-sky-700 underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sky-400 dark:text-sky-300">More about French <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl bg-white shadow transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800">
+          <img src="images/classroom.jpg" width="1376" height="768" loading="lazy" alt="A small group of adults in an English class with their teacher" class="aspect-video w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-sky-700 dark:text-sky-300">English</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">For work, travel and exams.</p>
+            <p class="mt-3 text-sm font-semibold">From €18 per lesson</p>
+            <a href="courses.html#english" class="mt-3 inline-block text-sm font-semibold text-sky-700 underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sky-400 dark:text-sky-300">More about English <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl bg-white shadow transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800">
+          <img src="images/teacher.jpg" width="1376" height="768" loading="lazy" alt="A teacher writing greetings in several languages on a whiteboard" class="aspect-video w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-sky-700 dark:text-sky-300">Spanish</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Speak from the very first lesson.</p>
+            <p class="mt-3 text-sm font-semibold">From €20 per lesson</p>
+            <a href="courses.html#spanish" class="mt-3 inline-block text-sm font-semibold text-sky-700 underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sky-400 dark:text-sky-300">More about Spanish <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-xl bg-white shadow transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-800">
+          <img src="images/books.jpg" width="1376" height="768" loading="lazy" alt="Language books and notebooks on a wooden table" class="aspect-video w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-lg font-semibold text-sky-700 dark:text-sky-300">Italian</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">The language of food and family.</p>
+            <p class="mt-3 text-sm font-semibold">From €20 per lesson</p>
+            <a href="courses.html#italian" class="mt-3 inline-block text-sm font-semibold text-sky-700 underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-sky-400 dark:text-sky-300">More about Italian <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="mt-8 text-center">
+        <a href="courses.html" class="inline-block rounded-lg border border-sky-700 px-6 py-3 font-semibold text-sky-700 hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-sky-400 dark:border-sky-300 dark:text-sky-300 dark:hover:bg-slate-800">See all courses and prices</a>
+      </p>
+    </section>
+
+    <section class="py-16 px-6 bg-white dark:bg-slate-800">
+      <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-white">Your learning roadmap</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-300">Every course follows the European levels, from A1 to C1. You always know where you are and what comes next.</p>
+      <ol class="mt-10 grid max-w-6xl gap-4 mx-auto sm:grid-cols-2 lg:grid-cols-5">
+        <li class="rounded-xl border border-sky-100 bg-sky-50 p-5 dark:border-slate-600 dark:bg-slate-700">
+          <p class="text-sm font-semibold text-sky-700 dark:text-sky-300">Step 1 · Start</p>
+          <h3 class="mt-1 font-semibold">Free level test</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">A 20-minute chat to find your level and your goals.</p>
+        </li>
+        <li class="rounded-xl border border-sky-100 bg-sky-50 p-5 dark:border-slate-600 dark:bg-slate-700">
+          <p class="text-sm font-semibold text-sky-700 dark:text-sky-300">Step 2 · A1 - A2</p>
+          <h3 class="mt-1 font-semibold">First conversations</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Shopping, directions, introducing yourself.</p>
+        </li>
+        <li class="rounded-xl border border-sky-100 bg-sky-50 p-5 dark:border-slate-600 dark:bg-slate-700">
+          <p class="text-sm font-semibold text-sky-700 dark:text-sky-300">Step 3 · B1</p>
+          <h3 class="mt-1 font-semibold">Daily life</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Doctor, town hall, work: handle it on your own.</p>
+        </li>
+        <li class="rounded-xl border border-sky-100 bg-sky-50 p-5 dark:border-slate-600 dark:bg-slate-700">
+          <p class="text-sm font-semibold text-sky-700 dark:text-sky-300">Step 4 · B2</p>
+          <h3 class="mt-1 font-semibold">Confident speaker</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Discuss news and opinions, write clear emails.</p>
+        </li>
+        <li class="rounded-xl border border-sky-100 bg-sky-50 p-5 dark:border-slate-600 dark:bg-slate-700">
+          <p class="text-sm font-semibold text-sky-700 dark:text-sky-300">Step 5 · C1</p>
+          <h3 class="mt-1 font-semibold">Exam ready</h3>
+          <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Prepare DELF, Cambridge, DELE or CILS exams.</p>
+        </li>
+      </ol>
+    </section>
+
     <section class="py-16 px-6">
       <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-white">What our students say</h2>
       <div class="mt-10 grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
@@ -95,22 +185,86 @@
       </div>
     </section>
 
+    <section class="px-6 py-16">
+      <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 rounded-2xl bg-sky-700 px-8 py-12 text-center text-white md:flex-row md:justify-between md:text-left dark:bg-sky-900">
+        <div>
+          <h2 class="text-3xl font-bold">Try your first lesson for free</h2>
+          <p class="mt-2 text-sky-100">No commitment. Meet your teacher, find your level, and see if it feels right.</p>
+        </div>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <a href="contact.html" class="whitespace-nowrap rounded-lg bg-white px-6 py-3 font-semibold text-sky-800 hover:bg-sky-100 focus:outline-none focus:ring-2 focus:ring-white">Book a free trial</a>
+          <a href="tel:+33493000000" class="whitespace-nowrap rounded-lg border border-white px-6 py-3 font-semibold text-white hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-white">Call us</a>
+        </div>
+      </div>
+    </section>
+
     <section class="py-16 px-6 bg-white dark:bg-slate-800">
-      <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-white">Opening hours</h2>
-      <ul class="mt-6 text-center space-y-2 text-slate-700 dark:text-slate-200">
-        <li>Monday to Friday: 9:00 - 20:00</li>
-        <li>Saturday: 9:00 - 13:00</li>
-        <li>Sunday: closed</li>
-
-
-      </ul>
-
+      <div class="mx-auto grid max-w-5xl gap-10 md:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-bold text-slate-800 dark:text-white">Opening hours</h2>
+          <ul class="mt-6 space-y-2 text-slate-700 dark:text-slate-200">
+            <li class="flex justify-between border-b border-slate-200 pb-2 dark:border-slate-600"><span>Monday to Friday</span><span class="font-semibold">9:00 - 20:00</span></li>
+            <li class="flex justify-between border-b border-slate-200 pb-2 dark:border-slate-600"><span>Saturday</span><span class="font-semibold">9:00 - 13:00</span></li>
+            <li class="flex justify-between"><span>Sunday</span><span class="font-semibold">Closed</span></li>
+          </ul>
+          <a href="contact.html" class="mt-6 inline-block rounded-lg bg-sky-700 px-6 py-3 font-semibold text-white hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-sky-400">Find us in Nice</a>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-slate-800 dark:text-white">Questions</h2>
+          <div class="mt-6 space-y-3">
+            <details class="rounded-lg border border-slate-200 p-4 dark:border-slate-600">
+              <summary class="cursor-pointer font-semibold focus:outline-none focus:ring-2 focus:ring-sky-400">I am a total beginner. Can I join?</summary>
+              <p class="mt-2 text-slate-600 dark:text-slate-300">Yes. Most of our students start from zero, and our A1 groups begin every month.</p>
+            </details>
+            <details class="rounded-lg border border-slate-200 p-4 dark:border-slate-600">
+              <summary class="cursor-pointer font-semibold focus:outline-none focus:ring-2 focus:ring-sky-400">What if I miss a class?</summary>
+              <p class="mt-2 text-slate-600 dark:text-slate-300">Tell us 24 hours before and you can join another group that week, at no extra cost.</p>
+            </details>
+            <details class="rounded-lg border border-slate-200 p-4 dark:border-slate-600">
+              <summary class="cursor-pointer font-semibold focus:outline-none focus:ring-2 focus:ring-sky-400">Do you prepare for official exams?</summary>
+              <p class="mt-2 text-slate-600 dark:text-slate-300">Yes: DELF and DALF for French, Cambridge for English, DELE for Spanish and CILS for Italian.</p>
+            </details>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
-  <footer class="bg-slate-800 py-8 px-6 text-center text-slate-200 dark:bg-slate-950">
-    <p>Lingua Azur · 12 Rue de la République, 06000 Nice · +33 4 93 00 00 00</p>
-    <p class="mt-2 text-sm text-slate-400">© 2026 Lingua Azur. All rights reserved.</p>
+  <footer class="bg-slate-800 px-6 pt-12 pb-8 text-slate-200 dark:bg-slate-950">
+    <div class="mx-auto grid max-w-6xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <p class="text-xl font-bold text-white">Lingua Azur</p>
+        <p class="mt-2 text-sm text-slate-400">Small-group language classes in the heart of Nice since 2014.</p>
+        <a href="contact.html" class="mt-4 inline-block rounded-lg bg-sky-600 px-4 py-2 text-sm font-semibold text-white hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-300">Book a free trial lesson</a>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Visit us</h2>
+        <address class="mt-2 text-sm not-italic text-slate-300">
+          12 Rue de la République<br>
+          06000 Nice, France<br>
+          <a href="tel:+33493000000" class="hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">+33 4 93 00 00 00</a><br>
+          <a href="mailto:hello@lingua-azur.fr" class="hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">hello@lingua-azur.fr</a>
+        </address>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Opening hours</h2>
+        <ul class="mt-2 space-y-1 text-sm text-slate-300">
+          <li>Monday to Friday: 9:00 - 20:00</li>
+          <li>Saturday: 9:00 - 13:00</li>
+          <li>Sunday: closed</li>
+        </ul>
+      </div>
+      <nav aria-label="Footer">
+        <h2 class="font-semibold text-white">Explore</h2>
+        <ul class="mt-2 space-y-1 text-sm">
+          <li><a href="index.html" class="text-slate-300 hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">Home</a></li>
+          <li><a href="courses.html" class="text-slate-300 hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">Courses and prices</a></li>
+          <li><a href="gallery.html" class="text-slate-300 hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">Gallery</a></li>
+          <li><a href="contact.html" class="text-slate-300 hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="mx-auto mt-10 max-w-6xl border-t border-slate-700 pt-6 text-center text-sm text-slate-400">© 2026 Lingua Azur. All rights reserved.</p>
   </footer>
   
   
